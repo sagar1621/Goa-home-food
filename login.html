@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Goa Home Food - Health, Tasty Food from a home kitchen!</title>
+</head>
+<body>
+<div class="fullpage">
+    <div class="signup">
+        <a href="index.html"><button id="back"> &times;</button></a>
+        <div class="head-login">
+            <p class="register">Registered Mobile Number</p>
+        </div>
+
+       
+        <form id="mainform" class="mainform" action="#">
+        <div class="titlelogin">
+
+        <div class="formlogin">
+
+
+            <div class="cont form-control">
+                <input disabled type="number" class="disabled"  value="+91" placeholder="+91">
+                <input  maxlength="10"  class="inputfileds contactno"  type="number" name="contactno" id="contactno" placeholder="Enter Mobile Number">
+                <small>Error msg</small>
+            </div>
+
+            <div class="checkboxlogin">
+                <input required type="checkbox" name="terms" id="terms">
+                <label  class="address" for="checkbox">I agree with the <a href="#">Terms & Conditions</a></label>
+                
+                <div class="submit1">
+                    <input id="submit" type="submit" class="submit">                
+    </div>
+               <div class="signup22"> <a class="signup2" href="signup2.html">Sign Up as Chef</a></div>
+
+            </form>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+<script>
+    let mainform=document.getElementById('mainform');
+    document.addEventListener('DOMContentLoaded', function () {
+    mainform.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        validate();
+      })
+});
+
+const validate=()=>{
+    let  contact=document.getElementById('contactno');
+    let contactval=contact.value.trim();
+
+
+
+
+
+    if(contactval===""){
+    setErrorMsg(contact, '*number cannot be blank');
+  }else if(contactval.length != 10){
+    setErrorMsg(contact, '*not a valid Phone Number');
+  }else{
+    setSuccessMsg(contact);
+  }
+
+
+  
+  function setErrorMsg(input, errormsgs){
+    const formControl= input.parentElement;
+    const small=formControl.querySelector('small');
+    formControl.className="form-control error";
+    small.innerText=errormsgs;
+  }
+
+  function setSuccessMsg(input){
+    const formControl= input.parentElement;
+    formControl.className="form-control success";
+  }
+}
+  
+
+</script>
+</body>
+</html>

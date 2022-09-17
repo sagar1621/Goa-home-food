@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Goa Home Food - Health, Tasty Food from a home kitchen!</title>
+</head>
+<body>
+<div class="fullpage">
+    <div class="signup">
+        <a href="index.html"><button id="back"> &times;</button></a>
+        <div class="head">
+            <p class="register">Register</p>
+        </div>
+
+       
+        <form id="mainform" class="mainform" action="#">
+        <div class="title">
+
+            <div class="form-title">
+                <p class="form-title">Title</p>
+            </div>
+
+            <div class="m Mrs">
+                <input required type="radio" class="radio" id="mrs" name="Title" value="Mrs">
+                <label for="mrs">Mrs.</label><br>
+            </div>
+            <div class="m Mr"> 
+                <input type="radio" class="radio" id="mr" name="Title" value="Mr">
+                <label for="mr">Mr.</label><br>
+            </div>
+            <div class="m Miss">
+                <input type="radio" class="radio" id="miss" name="Title" value="Miss">    
+                <label for="miss">Miss</label>
+            </div>
+
+        </div>
+
+        <div class="form">
+
+            <input required maxlength="15"  class="inputfileds" type="text" name="HomeChefName" id="chef-name"  placeholder="Home Chef Name">
+            <input required maxlength="15"  class="inputfileds" type="text" name="AliasName" id="Alias-name"  placeholder="Alias Name">
+            <div class="form-control">
+                <input  class="inputfileds" type="email" name="EmailAddress" id="emailaddress"  placeholder="Email Address">
+                <small>Error msg</small>
+            </div>
+            <div class="form-control">
+                <input  class="inputfileds" type="email" name="ConfirmEmailAddress" id="confirmemail"  placeholder="Confirm Email Address">
+                <small>Error msg</small>
+
+            </div>
+
+            <p class="address">Address</p>
+                <input required class="inputfileds" type="text" name="HNo" id="flatno"  placeholder="House No./ Flat No.">
+            <input required class="inputfileds" type="text" name="HName" id="Hname"  placeholder="House Name / Building Name">
+            <input required class="inputfileds" type="text" name="Road" id="Road"  placeholder="Road / Locality">
+            <input required class="inputfileds" type="text" name="Landmark" id="Landmark"  placeholder="Landmark">
+
+            <select required class="inputfileds"  id="country" name="countrynames">
+              <option value="India" selected>Select Country.... </option>
+              <option value="India">India</option>
+            </select>
+
+            <select required class="inputfileds"  id="state" name="statenames">
+              <option value="Selectstate" selected>Select State.... </option>
+              <option value="Goa">Goa</option>
+            </select>
+
+            <select required class="inputfileds" id="City" name="Citynames" >
+              <option value="SelectCity" selected>Select City.... </option>
+              <option value="Airport/Dabolim">Airport/Dabolim</option>
+              <option value="Margao">Margao</option>
+              <option value="Vasco-Da-Gama">Vasco-Da-Gama</option>
+              <option value="Aquem">Aquem</option>
+              <option value="Baina">Baina</option>
+              <option value="Benaulim">Benaulim</option>
+              <option value="Betalbhatim">Betalbhatim</option>
+              <option value="Bogmalo">Bogmalo</option>
+              <option value="Chicalim">Chicalim</option>
+              <option value="Colva">Colva</option>
+              <option value="Davorlim">Davorlim</option>
+              <option value="Fatorda">Fatorda</option>
+              <option value="Gogol">Gogol</option>
+              <option value="Orlim">Orlim</option>
+              <option value="Sada">Sada</option>
+              <option value="Seraulim">Seraulim</option>
+              <option value="Talaulim">Talaulim</option>
+              <option value="Utorda">Utorda</option>
+              <option value="Vaddem">Vaddem</option>
+              <option value="Vademnagar">Vademnagar</option>
+              <option value="Vanelim">Vanelim</option>
+              <option value="Navelim">Navelim</option>
+            </select>
+            <div class="form-control">
+                <input id="pincode" name="pincode" class="pincode"  type = "number" maxlength = "6" placeholder="Enter Pincode"/>            
+                <small>Error msg</small>
+            </div>
+        </div> 
+        <!-- till here grid -->
+
+
+            <div class="contactnotitle"><p>Contact Number</p></div>
+            
+            <div class="contactinpu form-control">
+                <input disabled type="number" class="disabled"  value="+91" placeholder="+91">
+                <input  maxlength="10"  class="inputfileds contactno"  type="number" name="contactno" id="contactno" placeholder="Enter Mobile Number">
+                <small>Error msg</small>
+            </div>
+
+            
+            <!-- <hr> -->
+            
+            <!-- <hr> -->
+            <div class="checkbox">
+                <input required type="checkbox" name="terms" id="terms">
+                <label  class="address" for="checkbox">I agree with the <a href="#">Terms & Conditions</a></label>
+                
+                <div class="submit1">
+                <input id="submit" type="submit" class="submit">                
+</div>
+            </form>
+        </div>
+
+
+
+    </form>
+    </div>
+</div>
+
+
+<script src="signup.js"></script>
+</body>
+
+</html>
